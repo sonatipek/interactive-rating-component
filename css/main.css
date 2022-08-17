@@ -1,0 +1,184 @@
+/* *Container */
+main.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* *Rating Card */
+main .rate-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle at top,hsl(215,20%,17%),hsl(216,18%,12%));
+  width: 28%;
+  border-radius: 30px;
+  padding: 2rem;
+  /* !TODO: BOX SHADOW */
+}
+
+/* Card Header */
+main .rate-card .card-header{
+  margin-bottom: 1rem;
+}
+
+main .rate-card .card-header .card-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: hsla(217, 12%, 63%, .1);
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+main .rate-card .card-header h2{
+  font-size: 1.75rem;
+  color: var(--white);
+}
+
+/* Card Content */
+main .rate-card .card-content{
+  margin-bottom: 1.5rem;
+}
+main .rate-card .card-content p{
+  line-height: 1.5;
+  color: var(--light-gray);
+  font-weight: 300;
+}
+
+/* Card Rating */
+main .rate-card .card-rating {
+  margin-top: 1rem;
+}
+
+main .rate-card .card-rating .radio-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]{
+  width: 50px;
+  height: 50px;
+  background-color: hsla(217, 12%, 63%, .1);
+  border-radius: 50%;
+  position: relative;
+}
+
+  /* Radio Buttons Style */
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.05rem;
+  color: var(--medium-gray);
+  font-weight: 700;
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#one::before{
+  content: "1";
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#two::before{
+  content: "2";
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#three::before{
+  content: "3";
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#four::before{
+  content: "4";
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#five::before{
+  content: "5";
+}
+
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:hover{
+  cursor: pointer;
+  background-color: var(--medium-gray);
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:active{
+  background-color: var(--light-gray);
+  
+ }
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:checked{
+ background-color: var(--primary-color);
+}
+  /* Radio Button Style End */
+
+
+main .rate-card .card-rating button{
+  display: block;
+  width: 100%;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50px;
+  padding: .75rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+main .rate-card .card-rating button:hover{
+  cursor: pointer;
+  color: var(--primary-color);
+  background: var(--white);  
+}
+
+
+/* *Thank Card */
+main .thank-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top,hsl(215,20%,17%),hsl(216,18%,12%));
+  width: 28%;
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  /* !TODO: BOX SHADOW */
+  display: none;
+}
+
+main .thank-card .card-header{
+  margin-bottom: 2rem;
+}
+main .thank-card .card-header p{
+  margin-top: 2rem;
+  background-color: hsla(217, 12%, 63%, .1);
+  color: var(--primary-color);
+  padding: .5rem 1rem;
+  border-radius: 50px;
+}
+
+main .thank-card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .thank-card .card-content h2{
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main .thank-card .card-content p{
+  color: var(--medium-gray);
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+/* *Footer */
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .attribution a{
+  color: var(--primary-color);
+}
+footer .attribution a:hover{
+  text-decoration: underline;
+}

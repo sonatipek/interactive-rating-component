@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght;400;700&display=swap");
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+:root {
+  /* Primary Color */
+  --primary-color: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background: var(--very-dark-blue);
+  color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+input[type="radio"]{
+  appearance: unset;
+}
+.container{
+  width: 1440px;
+  min-height: 100vh;
+}
