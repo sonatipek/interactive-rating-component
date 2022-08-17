@@ -15,7 +15,7 @@ main .rate-card{
   width: 28%;
   border-radius: 30px;
   padding: 2rem;
-  /* !TODO: BOX SHADOW */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 }
 
 /* Card Header */
@@ -75,9 +75,22 @@ main .rate-card .card-rating .radio-items .radio-item input[type="radio"]::befor
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.05rem;
-  color: var(--medium-gray);
+  color: var(--white);
   font-weight: 700;
 }
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:hover{
+  cursor: pointer;
+  background-color: var(--medium-gray);
+}
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:active{
+  background-color: var(--light-gray);
+  
+ }
+main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:checked{
+ background-color: var(--primary-color);
+ color: white;
+}
+
 main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#one::before{
   content: "1";
 }
@@ -93,22 +106,10 @@ main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#four::
 main .rate-card .card-rating .radio-items .radio-item input[type="radio"]#five::before{
   content: "5";
 }
-
-main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:hover{
-  cursor: pointer;
-  background-color: var(--medium-gray);
-}
-main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:active{
-  background-color: var(--light-gray);
-  
- }
-main .rate-card .card-rating .radio-items .radio-item input[type="radio"]:checked{
- background-color: var(--primary-color);
-}
   /* Radio Button Style End */
 
 
-main .rate-card .card-rating button{
+main .rate-card .card-rating #submit-button{
   display: block;
   width: 100%;
   border: none;
@@ -119,8 +120,9 @@ main .rate-card .card-rating button{
   margin-top: 2rem;
   font-weight: 700;
   letter-spacing: .1rem;
+  text-align: center;
 }
-main .rate-card .card-rating button:hover{
+main .rate-card .card-rating #submit-button:hover{
   cursor: pointer;
   color: var(--primary-color);
   background: var(--white);  
@@ -129,7 +131,7 @@ main .rate-card .card-rating button:hover{
 
 /* *Thank Card */
 main .thank-card{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -137,8 +139,7 @@ main .thank-card{
   width: 28%;
   border-radius: 30px;
   padding: 3rem 2rem;
-  /* !TODO: BOX SHADOW */
-  display: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 main .thank-card .card-header{

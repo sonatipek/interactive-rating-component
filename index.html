@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -35,7 +35,7 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
       </div>
-      <form method="get" class="card-rating">
+      <form action="#" method="_post" class="card-rating" name="card-rating">
         <ul class="radio-items">
           <li class="radio-item"><input type="radio" name="radio-select" id="one" value="1"></li>
           <li class="radio-item"><input type="radio" name="radio-select" id="two" value="2"></li>
@@ -44,7 +44,7 @@
           <li class="radio-item"><input type="radio" name="radio-select" id="five" value="5"></li>
         </ul>
 
-        <button type="submit">SUBMIT</button>
+        <button type="submit" id="submit-button">SUBMIT</button>
       </form>
     </div>
 
@@ -86,12 +86,13 @@
               fill="#FFF" />
           </g>
         </svg>
-        <p class="rating-info">You selected <span class="selected">4</span> out of 5</p>
+        <p class="rating-info">You selected <span class="selected"></span> out of 5</p>
       </div>
       <div class="card-content">
         <h2>Thank you!</h2>
         <p>We appreciate you taking the time to give a rating. If you ever need more support,
           don’t hesitate to get in touch!</p>
+          <a href="/">Back to rate</a>
       </div>
     </div>
 
@@ -104,7 +105,7 @@
   </main>
 
   
-
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
